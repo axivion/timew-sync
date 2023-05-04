@@ -7,10 +7,13 @@ extract possible JIRA-IDs from it.
 ## Installation
 
 ```
-git clone https://github.com/lummax/timew-sync.git
+git clone https://github.com/axivion/timew-sync.git
 cd timew-sync/
+python -m venv SYNC_VENV
+source SYNC_VENV/bin/activate
 pip install --user .
-ln -s ~/.local/bin/timew-sync ~/.timewarrior/extensions/sync.py
+ln -s (pwd)/SYNC_VENV/bin/timew-sync ~/.timewarrior/extensions/sync.py
+deactivate
 ```
 
 ## Configuration
